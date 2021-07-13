@@ -1,0 +1,107 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+\fontdir[fonts/]
+\newcommand*{\sectiondir}{resume/}
+
+\colorlet{awesome}{awesome-darknight}
+
+\begin{document}
+    
+\begin{center}
+	\headerfirstnamestyle{João} \headerlastnamestyle{Carrasco} \\
+	\vspace{2mm}
+	{\faEnvelope\ jpcarrasco@protonmail.com} | {\faMobile\ +353 083 059 2181} | {\faMapMarker\ Dublin, IE} \\ 
+	{\faLinkedinSquare\ \color{darkblue}{https://www.linkedin.com/in/joao-carrasco/}} | {\faGithub\ \color{darkblue}{https://github.com/jpcrs/}} 
+\end{center}
+
+\cvsection{About me}
+\begin{txtx}
+I consider myself a developer that likes simple solutions, not a fan of overengineering. I've worked on different projects on different fields, like Telecom, Banking, IoT, Networking, etc, mainly working as a backend engineer. I have programming as a hobby, especially learning new technologies and messing with reverse engineering, but besides that also like to spend my time reading, trying to learn music, playing games or just staying with family and friends.
+\end{txtx}
+
+\cvsection{Work Experience}
+\begin{cventries}
+	\cventry
+	{Senior Software Engineer}
+	{Akamai Technologies (Previously Asavie, acquired Oct 2020)}
+	{Dublin, IE}
+	{Jun 2018 – Present}
+	{\begin{cvitems}
+		\item {Responsible for designing, provisioning, building and maintaining highly scalable API\textquotesingle{}s for Asavie IoT core services, mainly using .Net Core 3.1 Microservices running on Docker/Kubernetes(AKS) and Azure Functions. Using patterns like CQRS, Event Sourcing and concepts of Actor Model. Working mainly with Azure and using AzureDevops for CI/CD.}
+		\item {Responsible for design sessions on the system architecture, OpenAPI design and new features implementation details.}
+		\item {Automating cloud resources creation/management using Pulumi(C\# and TypeScript) and Terraform.}
+		\item {Building and maintaining pipelines for our applications automated build/test/deployment using Azure Devops, automated deployment to Kubernetes, Azure Functions and WebApps in different environments.}
+		\item {Responsible for integrating our systems with centralized solutions for logs/traces/metrics like Jaeger, ELK and Grafana.}
+		\item {Mentoring new team members joining the team.}
+		\item \textbf{Technology Stack: ASP.NET Core, Docker, Kubernetes, Pulumi/Terraform, CosmosDB, Azure Functions, Azure Storage Queue, Azure Event Grid, Azure Service Bus, Azure Event Hubs and some other good stuff.}
+		\end{cvitems}}
+	\cventry
+	{Software Engineer}
+	{Itaú}
+	{São Paulo, BR}
+	{Jun 2017 – Apr 2018}
+	{\begin{cvitems}
+		\item {Developing and maintaining \href{https://play.google.com/store/apps/details?id=com.itau}{\color{darkblue}{Banco Itaú}}, \href{https://play.google.com/store/apps/details?id=com.itaucard.activity}{\color{darkblue}{ItaúCard}} and \href{https://play.google.com/store/apps/details?id=com.itau.iti}{\color{darkblue}{ITI}} apps, working mainly with Android but sometimes also with iOS, and developing API\textquotesingle{}s with Node.js. Had some experiences with CI/CD (Jenkins and SonarQube).}
+		\item \textbf{Technology stack: Node.js, Express, Android (EventBus, Retrofit, RxJava), iOS (Objective-C and Swift).}
+		\end{cvitems}}
+	\cventry
+	{Full Stack Engineer}
+	{MUTANT BR}
+	{São Paulo, BR}
+	{Apr 2017 – Jul 2017}
+	{\begin{cvitems}
+		\item {Developing web systems for NET and Claro, using mainly Microsoft technology stack, Agile (Scrum), TFS for versioning and SQLServer for database. Also responsible for creating some CI jobs using Jenkins and Octopus Deploy.}
+		\item \textbf{Techology stack: ASP.NET MVC5/WebAPI, EF5, WCF, Redis, LINQ, AutoMapper, SimpleInjector, JWT, Jenkins, AngularJS. }
+		\end{cvitems}}
+	\cventry
+	{Full Stack Engineer}
+	{TOTVS juriTIs}
+	{São Paulo, BR}
+	{Jul 2015 – Jan 2017}
+	{\begin{cvitems}
+		\item {Developing web systems for some of the biggest legal offices in Brazil, using mainly Microsoft technology stack, Agile (Scrum), databases with TSQL (SQLServer) and PL/SQL and Crystal Reports for reports.}
+		\item \textbf{Technology stack: ASP.NET MVC5, EF5, WebAPI v2, OData v2, LINQ, SignalR, HangFire, AutoMapper, SimpleInjector, Durandal, KnockoutJS, BreezeJS, JQuery, KendoUI.}
+		\end{cvitems}}
+	\cventry
+	{Teacher Assistant}
+	{Instituto Federal de Educação, Ciência e Tecnologia de São Paulo}
+	{São Paulo, BR}
+	{May 2013 – Mar 2014}
+	{\begin{cvitems}
+		\item \textbf{Paid internship during college, responsible for helping in Programming Logic and C Development classes.}
+		\end{cvitems}}
+\end{cventries}
+\cvsection{Skills}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Programming Languages: {\skill{ C\#, JavaScript }} \\
+		Technologies: {\skill{ Azure, Docker, Kubernetes, ELK, Pulumi, Terraform }} \\
+		Used Previously: {\skill{Clojure, Go, Java}} \\
+		Studying: {\skill{ Rust, F\# }} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+\vspace{-9mm}
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{Bachelor in Technology}
+	{Instituto Federal de Educação, Ciência e Tecnologia de São Paulo}
+	{São Paulo, SP}
+	{2012 – 2016}
+	{}
+\end{cventries}
+\end{document}
