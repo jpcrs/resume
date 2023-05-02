@@ -196,8 +196,8 @@
 \newfontfamily\test[
   Path=\@fontdir,
   UprightFont=calibri,
-  ItalicFont=calibrib,
-  BoldFont=calibrii,
+  ItalicFont=calibrii,
+  BoldFont=calibrib,
   BoldItalicFont=calibriz
 ]{}
 
